@@ -40,7 +40,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -ms-flex-preferred-size: 88%;
   flex-basis: 88%;
@@ -63,6 +68,8 @@ input[type="radio"].visually-hidden {
   height: 40px;
   margin-left: 30px;
   margin-right: 75px;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
   
   text-align: center;
@@ -132,8 +139,14 @@ input[type="radio"].visually-hidden {
   margin-left: 0;
   margin-right: auto;
   
+  -o-object-fit: cover;
+  
   object-fit: cover;
+  -o-object-position: top;
   object-position: top;
+  
+  -webkit-clip-path: polygon(0 0, 0 90%, 25% 95%, 25% 90%, 50% 100%,
+                    75% 90%, 75% 95%, 100% 90%, 100% 0);
   
   clip-path: polygon(0 0, 0 90%, 25% 95%, 25% 90%, 50% 100%,
                     75% 90%, 75% 95%, 100% 90%, 100% 0);
@@ -145,9 +158,10 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 10px;
   left: 25%;
-  
   width: 50%;
   max-height: 350px;
+  
+  -o-object-fit: scale-down;
   
   object-fit: scale-down;
   
@@ -412,8 +426,13 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
   flex-flow: column wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   min-height: 215px;
@@ -454,10 +473,13 @@ input[type="radio"].visually-hidden {
   top: 175px;
   width: 570px;
   min-height: 85px;
+  margin: 0 auto;
+  padding: 0 50px;
+  -ms-flex-item-align: center;
+  align-self: center;
   
   border: none;
   text-align: center;
-  padding: 0 50px;
   
   z-index: 2;
 }
@@ -549,7 +571,11 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 33%;
   list-style: none;
@@ -637,7 +663,11 @@ input[type="radio"].visually-hidden {
 .modal-wrapper {
   position: relative;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -648,7 +678,10 @@ input[type="radio"].visually-hidden {
  
   width: 570px;
   min-height: 395px;
+  margin: 0 auto;
   padding: 55px;
+  -ms-flex-item-align: center;
+  align-self: center;
   
   color: #000;
   background-color: #fff;
@@ -866,6 +899,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-top: -40px;
   
+  -o-object-fit: cover;
+  
   object-fit: cover;
   
   background-color: #396282;
@@ -873,6 +908,8 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   
   width: 100%;
@@ -896,6 +933,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -916,6 +954,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 50%;
   
