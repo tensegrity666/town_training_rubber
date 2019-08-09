@@ -515,6 +515,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 600px;
 }
 
 .footer-transparent {
@@ -952,11 +954,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: 50%;
   
   margin: 0;
@@ -991,11 +993,13 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   width: 100%;
   
-  margin: 35px 35px 10px 5px;
+  margin: 35px 25px 10px 25px;
 }
 
 .infrastructure ul, 
