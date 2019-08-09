@@ -135,13 +135,15 @@ input[type="radio"].visually-hidden {
   object-fit: cover;
   object-position: top;
   
-  background-color: #396282;
+  clip-path: polygon(0 0, 0 90%, 25% 95%, 25% 90%, 50% 100%,
+                    75% 90%, 75% 95%, 100% 90%, 100% 0);
+  
   z-index: 1;
 }
 
 .promo .welcome {
   position: absolute;
-  top: 10%;
+  top: 10px;
   left: 25%;
   
   width: 50%;
@@ -149,7 +151,7 @@ input[type="radio"].visually-hidden {
   
   object-fit: scale-down;
   
-  background-color: transparent;
+  z-index: 2;
 }
 
 .inner-page .promo {
