@@ -11,21 +11,23 @@
 <body class="inner-page">
  
   <header>
+    <img class="logo-small" src="images/logos/logo.png" alt="Логотип города Седона">
     <nav class="main-navigation">
       <ul class="main-navigation-list">
         <li><a href="index.html">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
-        <li><a href="#"><img src="images/logos/logo.png" alt="Логотип города Седона"></a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a>Гостиницы</a></li>
+        <li><a>Гостиницы</a>
       </ul>
     </nav>
   </header>
+   
     <main class="inner-page">
-
+    <div class="form-wrapper">
     <h1 class="visually-hidden">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
     <section class="hotels-forms">
         <h2 class="visually-hidden">Поиск отеля</h2>
+        <img class="inner-background" src="images/background-inner2.jpg" alt="Горный пейзаж">
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <div class="accomodations">
             <fieldset>
@@ -38,6 +40,7 @@
                           <span class="checkbox-indicator"></span>
                           Бассейн</label>
                         </li>
+                        
                         <li class="filter-option">
                           <label for="filter-parking">
                           <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
@@ -70,6 +73,7 @@
                           <span class="checkbox-indicator"></span>
                           Мотель</label>
                         </li>
+                        
                         <li class="filter-option">
                           <label for="filter-apartments">
                           <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
@@ -97,8 +101,8 @@
             </div>
         </form>
     </section>
-       
-    <section class="content sort">
+    </div>   
+    <section class="sort">
       <h2 class="visually-hidden">Сортировка результатов поиска</h2>
         <div class="sort-types">
           <b class="results">Найдено: 3</b>
@@ -210,7 +214,7 @@
         <li><a class="facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
         <li><a class="youtube" href="#"><span class="visually-hidden">Youtube</span></a></li>
       </ul>
-      <p>Websyte by<a class="author-tag" href="#">TNSGRTY666</a></p>
+      <p>Websyte by<a class="author-tag" href="https://github.com/tensegrity666">TNSGRTY666</a></p>
     </section>
   </footer>
   
